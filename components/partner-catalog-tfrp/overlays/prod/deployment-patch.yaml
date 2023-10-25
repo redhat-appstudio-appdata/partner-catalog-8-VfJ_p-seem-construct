@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-tfrp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/asaran-tenant/partner-catalog-8/partner-catalog-tfrp@sha256:b3ac99177cdf87e37de8a07400eefa44792558bf521f8c7a0ec57eb3bf4592f4
+        name: my-java-springboot
+        resources: {}
+status: {}
