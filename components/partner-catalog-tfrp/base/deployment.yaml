@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: partner-catalog-tfrp
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/asaran-tenant/partner-catalog-8/partner-catalog-tfrp@sha256:b3ac99177cdf87e37de8a07400eefa44792558bf521f8c7a0ec57eb3bf4592f4
         name: my-java-springboot
         ports:
         - containerPort: 8081
